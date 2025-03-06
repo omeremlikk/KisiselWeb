@@ -51,10 +51,7 @@ public class ProjectService
         existingProject.ShortDescription = updatedProject.ShortDescription;
         existingProject.ImageUrl = updatedProject.ImageUrl;
         existingProject.GifUrl = updatedProject.GifUrl;
-        // CreatedDate alanı artık kullanılmıyor
-        // existingProject.CreatedDate = updatedProject.CreatedDate;
         existingProject.Category = updatedProject.Category;
-        existingProject.TechStack = updatedProject.TechStack;
         existingProject.IsFeatured = updatedProject.IsFeatured;
         existingProject.Features = updatedProject.Features;
         existingProject.Technologies = updatedProject.Technologies;
@@ -72,10 +69,7 @@ public class ProjectService
             ShortDescription = "Örnek proje kısa açıklama",
             ImageUrl = "/images/ornek-proje.jpg",
             GifUrl = "/images/ornek-proje.gif",
-            // CreatedDate alanı artık kullanılmıyor
-            // CreatedDate = DateTime.Now,
             Category = "web",
-            TechStack = "ASP.NET Core, Bootstrap",
             IsFeatured = true,
             Features = new List<string> { "Özellik 1", "Özellik 2", "Özellik 3" },
             Technologies = new List<string> { "ASP.NET Core", "Bootstrap", "Entity Framework Core" }
@@ -112,7 +106,6 @@ public class ProjectService
                 GifUrl = "/images/proje1.gif",
                 Category = "frontend",
                 IsFeatured = true,
-                TechStack = "ASP.NET Core MVC, Bootstrap 5, Entity Framework Core",
                 Features = new List<string> 
                 { 
                     "Responsive tasarım", 
@@ -140,7 +133,6 @@ public class ProjectService
                 GifUrl = "/images/proje2.gif",
                 Category = "all",
                 IsFeatured = true,
-                TechStack = "React.js, .NET Core Web API, Entity Framework Core",
                 Features = new List<string> 
                 { 
                     "Görev ekleme, düzenleme, silme", 
@@ -166,7 +158,6 @@ public class ProjectService
                 GifUrl = "/images/proje3.gif",
                 Category = "web",
                 IsFeatured = false,
-                TechStack = "ASP.NET Core, Angular, MS SQL, Redis",
                 Features = new List<string> 
                 { 
                     "Kullanıcı kayıt ve giriş sistemi", 

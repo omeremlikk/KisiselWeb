@@ -1,5 +1,6 @@
 using KisiselBlog.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
 
 namespace KisiselBlog.Data;
 
@@ -33,7 +34,22 @@ public class ApplicationDbContext : DbContext
                 GifUrl = "/images/proje1.gif",
                 Category = "frontend",
                 IsFeatured = true,
-                TechStack = "ASP.NET Core MVC, Bootstrap 5, Entity Framework Core"
+                FeaturesJson = JsonSerializer.Serialize(new List<string> 
+                { 
+                    "Responsive tasarım", 
+                    "Modern UI/UX", 
+                    "Blog yazı yönetimi",
+                    "SEO uyumlu yapı", 
+                    "Performans optimizasyonu" 
+                }),
+                TechnologiesJson = JsonSerializer.Serialize(new List<string> 
+                { 
+                    "ASP.NET Core MVC", 
+                    "Bootstrap 5", 
+                    "Entity Framework Core", 
+                    "SQLite", 
+                    "JavaScript/jQuery" 
+                })
             },
             new Project
             {
@@ -45,7 +61,22 @@ public class ApplicationDbContext : DbContext
                 GifUrl = "/images/proje2.gif",
                 Category = "all",
                 IsFeatured = true,
-                TechStack = "React.js, .NET Core Web API, Entity Framework Core"
+                FeaturesJson = JsonSerializer.Serialize(new List<string> 
+                { 
+                    "Responsive tasarım", 
+                    "Modern UI/UX", 
+                    "Görev yönetimi",
+                    "SEO uyumlu yapı", 
+                    "Performans optimizasyonu" 
+                }),
+                TechnologiesJson = JsonSerializer.Serialize(new List<string> 
+                { 
+                    "React.js", 
+                    ".NET Core Web API", 
+                    "Entity Framework Core", 
+                    "SQLite", 
+                    "JavaScript/jQuery" 
+                })
             },
             new Project
             {
@@ -57,7 +88,22 @@ public class ApplicationDbContext : DbContext
                 GifUrl = "/images/proje3.gif",
                 Category = "web",
                 IsFeatured = false,
-                TechStack = "ASP.NET Core, Angular, MS SQL, Redis"
+                FeaturesJson = JsonSerializer.Serialize(new List<string> 
+                { 
+                    "Responsive tasarım", 
+                    "Modern UI/UX", 
+                    "E-ticaret işlevleri",
+                    "SEO uyumlu yapı", 
+                    "Performans optimizasyonu" 
+                }),
+                TechnologiesJson = JsonSerializer.Serialize(new List<string> 
+                { 
+                    "ASP.NET Core", 
+                    "Angular", 
+                    "MS SQL", 
+                    "Redis", 
+                    "JavaScript/jQuery" 
+                })
             }
         );
 

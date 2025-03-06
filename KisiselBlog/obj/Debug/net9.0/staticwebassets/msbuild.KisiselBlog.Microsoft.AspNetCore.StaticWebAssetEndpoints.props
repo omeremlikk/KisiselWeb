@@ -3,14 +3,14 @@
     <StaticWebAssetEndpoint Include="_content/KisiselBlog/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ghhk5lO4tgbWqbCxnBP8I4MyE\u002BbqrsxZaoVg9YFXdh8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"27991"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ghhk5lO4tgbWqbCxnBP8I4MyE\u002BbqrsxZaoVg9YFXdh8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 13:54:16 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tNIHiaguIrRMRrTInlHdwElpFh684R5ci2Jm\u002BXfC2Lo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29181"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tNIHiaguIrRMRrTInlHdwElpFh684R5ci2Jm\u002BXfC2Lo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 14:17:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KisiselBlog/css/site.ukxi99spq1.css">
+    <StaticWebAssetEndpoint Include="_content/KisiselBlog/css/site.cuvi5fu3cs.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ukxi99spq1"},{"Name":"integrity","Value":"sha256-ghhk5lO4tgbWqbCxnBP8I4MyE\u002BbqrsxZaoVg9YFXdh8="},{"Name":"label","Value":"_content/KisiselBlog/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"27991"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ghhk5lO4tgbWqbCxnBP8I4MyE\u002BbqrsxZaoVg9YFXdh8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 13:54:16 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cuvi5fu3cs"},{"Name":"integrity","Value":"sha256-tNIHiaguIrRMRrTInlHdwElpFh684R5ci2Jm\u002BXfC2Lo="},{"Name":"label","Value":"_content/KisiselBlog/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29181"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tNIHiaguIrRMRrTInlHdwElpFh684R5ci2Jm\u002BXfC2Lo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 14:17:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KisiselBlog/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -51,14 +51,14 @@
     <StaticWebAssetEndpoint Include="_content/KisiselBlog/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gaLLiOvg5JDHwZh4u/aFxnnMiHhLRvqFqNvcQSPoxrM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6506"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022gaLLiOvg5JDHwZh4u/aFxnnMiHhLRvqFqNvcQSPoxrM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 13:53:16 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-GXvkwxYk5PaltwOTE1YYQG3aSSuJWLUEkxDkERU81qo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6486"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022GXvkwxYk5PaltwOTE1YYQG3aSSuJWLUEkxDkERU81qo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 14:17:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KisiselBlog/js/site.r96f8e9c5k.js">
+    <StaticWebAssetEndpoint Include="_content/KisiselBlog/js/site.zpkoeu8ucl.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r96f8e9c5k"},{"Name":"integrity","Value":"sha256-gaLLiOvg5JDHwZh4u/aFxnnMiHhLRvqFqNvcQSPoxrM="},{"Name":"label","Value":"_content/KisiselBlog/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6506"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022gaLLiOvg5JDHwZh4u/aFxnnMiHhLRvqFqNvcQSPoxrM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 13:53:16 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zpkoeu8ucl"},{"Name":"integrity","Value":"sha256-GXvkwxYk5PaltwOTE1YYQG3aSSuJWLUEkxDkERU81qo="},{"Name":"label","Value":"_content/KisiselBlog/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6486"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022GXvkwxYk5PaltwOTE1YYQG3aSSuJWLUEkxDkERU81qo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 14:17:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KisiselBlog/KisiselBlog.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\KisiselBlog.iv3soyef7v.bundle.scp.css'))</AssetFile>

@@ -11,7 +11,6 @@ public class Project
     public string ImageUrl { get; set; } = string.Empty;
     public string GifUrl { get; set; } = string.Empty;
     public string Category { get; set; } = string.Empty;
-    public string TechStack { get; set; } = string.Empty;
     public bool IsFeatured { get; set; }
     
     // SQLite string listelerini doğrudan desteklemediği için JSON olarak saklayacağız

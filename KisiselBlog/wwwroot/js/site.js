@@ -144,9 +144,8 @@ $(document).ready(function() {
     $('.portfolio-filter .btn').click(function() {
         $('.portfolio-filter .btn').removeClass('active');
         $(this).addClass('active');
-        
-        const filter = $(this).data('filter');
-        
+
+        var filter = $(this).data('filter');
         if (filter === 'all') {
             $('#portfolio-items > div').fadeIn(300);
         } else {
