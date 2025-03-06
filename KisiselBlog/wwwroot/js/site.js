@@ -63,6 +63,80 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    
+    // Portfolio kartları için animasyon
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    
+    if (portfolioItems.length > 0) {
+        portfolioItems.forEach((item, index) => {
+            // Görünüm animasyonu ekle
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                item.style.transition = 'all 0.5s ease';
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+            }, 100 * index); // Her kart için kademeli animasyon
+        });
+    }
+    
+    // Proje detay sayfasında animasyon
+    const projectDetail = document.querySelector('.project-detail-page');
+    if (projectDetail) {
+        const elements = projectDetail.querySelectorAll('.animate-fadeInUp');
+        
+        elements.forEach(element => {
+            // Görünüm animasyonu ekle
+            element.style.opacity = '0';
+            
+            // Sayfa yüklendiğinde animasyonu başlat
+            setTimeout(() => {
+                element.style.opacity = '1';
+            }, 100);
+        });
+    }
+    
+    // Modal açıldığında animasyon
+    const modals = document.querySelectorAll('.modal');
+    if (modals.length > 0) {
+        modals.forEach(modal => {
+            modal.addEventListener('shown.bs.modal', function() {
+                const elements = modal.querySelectorAll('.animate-fadeInUp');
+                
+                elements.forEach((element, index) => {
+                    element.style.opacity = '0';
+                    element.style.transform = 'translateY(20px)';
+                    
+                    setTimeout(() => {
+                        element.style.transition = 'all 0.5s ease';
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }, 100 * index);
+                });
+            });
+        });
+    }
+    
+    // Tüm portfolyo kartlarının görüntülerinin yüklenip yüklenmediğini kontrol edelim
+    const portfolioImages = document.querySelectorAll('.portfolio-item img');
+    
+    portfolioImages.forEach(img => {
+        // Eğer görüntü zaten önbellekte varsa veya yüklenmişse
+        if (img.complete) {
+            console.log('Image already loaded:', img.src);
+        } else {
+            img.addEventListener('load', function() {
+                console.log('Image loaded successfully:', img.src);
+            });
+            
+            img.addEventListener('error', function() {
+                console.error('Error loading image:', img.src);
+                // Hata durumunda bir placeholder görüntü gösterelim
+                img.src = '/images/placeholder.jpg';
+            });
+        }
+    });
 });
 
 // Portfolio filtresi

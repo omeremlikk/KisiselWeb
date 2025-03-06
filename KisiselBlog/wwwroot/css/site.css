@@ -225,24 +225,33 @@ body {
 
 .portfolio-item {
   position: relative;
-  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  aspect-ratio: 16/9;
-  background: var(--darker-bg);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 280px;
+  width: 100%;
+  z-index: 1;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  background: var(--dark-bg);
-  border-radius: 12px;
+  display: block;
+  z-index: 1;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
 }
 
 .portfolio-overlay {
@@ -251,83 +260,70 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, 
-      rgba(30, 41, 59, 0.95),
-      rgba(15, 23, 42, 0.98)
-  );
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.5) 50%, rgba(15, 23, 42, 0.1) 100%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  padding: 25px;
   opacity: 0;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 2rem;
-  text-align: center;
-  backdrop-filter: blur(8px);
-}
-
-.portfolio-overlay h4 {
-  color: #ffffff;
-  margin-bottom: 1rem;
-  font-size: 1.75rem;
-  font-weight: 600;
-  transform: translateY(-20px);
-  opacity: 0;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
-}
-
-.portfolio-overlay p {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.75rem;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
-}
-
-.portfolio-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
-.portfolio-item:hover img {
-  transform: scale(1.05);
+  transition: opacity 0.3s ease;
+  z-index: 2;
 }
 
 .portfolio-item:hover .portfolio-overlay {
   opacity: 1;
 }
 
-.portfolio-item:hover .portfolio-overlay h4,
-.portfolio-item:hover .portfolio-overlay p {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.portfolio-overlay .btn-light {
-  background: rgba(255, 255, 255, 0.95);
-  border: none;
-  font-weight: 500;
-  padding: 10px 24px;
-  border-radius: 8px;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
+.portfolio-overlay h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 8px;
   transform: translateY(20px);
   opacity: 0;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
-  margin: 0 0.5rem;
+  transition: all 0.3s ease 0.1s;
 }
 
+.portfolio-overlay p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 12px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease 0.2s;
+}
+
+.portfolio-actions {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.portfolio-actions .btn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay h4,
+.portfolio-item:hover .portfolio-overlay p,
 .portfolio-item:hover .portfolio-overlay .btn {
   transform: translateY(0);
   opacity: 1;
 }
 
-.portfolio-overlay .btn-light:hover {
-  background: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+.portfolio-actions .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.portfolio-actions .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.portfolio-actions .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .contact-form {
@@ -806,15 +802,14 @@ section#portfolio {
 }
 
 .modal-content {
-  background-color: var(--dark-bg);
+  background: var(--card-bg);
   border: none;
   border-radius: 15px;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .modal-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
 }
 
 .modal-title {
@@ -842,23 +837,23 @@ section#portfolio {
 }
 
 .modal-body h6 {
-  color: var(--text-primary);
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  color: var(--accent-color);
   font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.modal-body h6:first-child {
-  margin-top: 0;
+.modal-body p {
+  color: var(--text-secondary);
 }
 
 .modal-body ul {
-  padding-left: 1.2rem;
+  padding-left: 20px;
+  color: var(--text-secondary);
 }
 
 .modal-body li {
-  margin-bottom: 0.5rem;
-  color: var(--text-secondary);
+  margin-bottom: 5px;
 }
 
 .modal-body img {
@@ -1257,4 +1252,109 @@ section {
   #portfolio-items {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* Detay sayfası için ek stiller */
+.project-detail-page {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-meta {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.project-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-tags {
+  margin: 1.5rem 0;
+}
+
+.project-tag {
+  display: inline-block;
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--accent-color);
+  padding: 5px 15px;
+  border-radius: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+/* Animasyonlar için ek stiller */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+/* Portfolyo kartlarındaki butonlar için ek stiller */
+.portfolio-actions {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.portfolio-actions .btn {
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+.portfolio-actions .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.portfolio-actions .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.portfolio-actions .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }

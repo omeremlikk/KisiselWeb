@@ -1,3 +1,4 @@
+@model List<Project>
 @{
     ViewData["Title"] = "Portfolyo";
 }
@@ -46,131 +47,84 @@
     </div>
 
     <div class="container mb-5">
-        <div id="portfolio-items">
-            <div class="portfolio-item" data-category="frontend">
-                <img src="~/images/proje1.png" alt="Kişisel Blog Projesi">
-                <div class="portfolio-overlay">
-                    <h4>Kişisel Blog Projesi</h4>
-                    <p>ASP.NET Core MVC ile geliştirilmiş modern blog sitesi</p>
-                    <div class="mt-3">
-                        <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#detailsModal1">Detaylar</button>
-                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#demoModal1">Demo</button>
+        <div class="row" id="portfolio-items">
+            @foreach (var project in Model)
+            {
+                <div class="col-lg-4 col-md-6 mb-4" data-category="@project.Category">
+                    <div class="portfolio-item">
+                        <img src="@(project.ImageUrl.StartsWith("/") ? project.ImageUrl : "/" + project.ImageUrl)" alt="@project.Title">
+                        <div class="portfolio-overlay">
+                            <h4>@project.Title</h4>
+                            <p>@project.ShortDescription</p>
+                            <div class="portfolio-actions">
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal@(project.Id)">
+                                    <i class="fas fa-info-circle me-1"></i>Detaylar
+                                </button>
+                                <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal@(project.Id)">
+                                    <i class="fas fa-plus-circle me-1"></i>Bilgi
+                                </button>
+                                <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#demoModal@(project.Id)">
+                                    <i class="fas fa-play-circle me-1"></i>Demo
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
+        </div>
+    </div>
+</div>
 
-            <div class="portfolio-item" data-category="all">
-                <img src="~/images/proje2.png" alt="To-Do List Uygulaması">
-                <div class="portfolio-overlay">
-                    <h4>To-Do List Uygulaması</h4>
-                    <p>React ve .NET Core Web API ile geliştirilmiş görev yönetim uygulaması</p>
-                    <div class="mt-3">
-                        <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#detailsModal2">Detaylar</button>
-                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#demoModal2">Demo</button>
-                    </div>
+<!-- Proje Modals -->
+@foreach (var project in Model)
+{
+    <!-- Proje Detay Modal -->
+    <div class="modal fade" id="detailsModal@(project.Id)" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@project.Title - Detaylar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Proje Açıklaması</h6>
+                    <p>@project.Description</p>
+                    
+                    <h6>Kullanılan Teknolojiler</h6>
+                    <ul>
+                        @foreach (var tech in project.Technologies)
+                        {
+                            <li>@tech</li>
+                        }
+                    </ul>
+                    
+                    <h6>Özellikler</h6>
+                    <ul>
+                        @foreach (var feature in project.Features)
+                        {
+                            <li>@feature</li>
+                        }
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Proje 1 Detay Modal -->
-<div class="modal fade" id="detailsModal1" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Kişisel Blog Projesi - Detaylar</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <h6>Proje Açıklaması</h6>
-                <p>ASP.NET Core MVC kullanılarak geliştirilen modern ve responsive bir kişisel blog sitesi.</p>
-                
-                <h6>Kullanılan Teknolojiler</h6>
-                <ul>
-                    <li>ASP.NET Core MVC</li>
-                    <li>Bootstrap 5</li>
-                    <li>Entity Framework Core</li>
-                    <li>SQL Server</li>
-                    <li>JavaScript/jQuery</li>
-                </ul>
-                
-                <h6>Özellikler</h6>
-                <ul>
-                    <li>Responsive tasarım</li>
-                    <li>Modern UI/UX</li>
-                    <li>Blog yazı yönetimi</li>
-                    <li>SEO uyumlu yapı</li>
-                    <li>Performans optimizasyonu</li>
-                </ul>
+    <!-- Proje Demo Modal -->
+    <div class="modal fade" id="demoModal@(project.Id)" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@project.Title - Demo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="@project.GifUrl" alt="@project.Title Demo" class="img-fluid rounded" />
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Proje 1 Demo Modal -->
-<div class="modal fade" id="demoModal1" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Kişisel Blog Projesi - Demo</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center">
-                <img src="~/images/proje1.gif" alt="Blog Projesi Demo" class="img-fluid rounded" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Proje 2 Detay Modal -->
-<div class="modal fade" id="detailsModal2" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">To-Do List Uygulaması - Detaylar</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <h6>Proje Açıklaması</h6>
-                <p>React ve .NET Core Web API kullanılarak geliştirilen modern bir görev yönetim uygulaması.</p>
-                
-                <h6>Kullanılan Teknolojiler</h6>
-                <ul>
-                    <li>React.js</li>
-                    <li>.NET Core Web API</li>
-                    <li>Entity Framework Core</li>
-                    <li>SQL Server</li>
-                    <li>Bootstrap</li>
-                </ul>
-                
-                <h6>Özellikler</h6>
-                <ul>
-                    <li>Görev ekleme, düzenleme, silme</li>
-                    <li>Görev kategorileri</li>
-                    <li>Görev önceliklendirme</li>
-                    <li>Görev filtreleme ve arama</li>
-                    <li>Responsive tasarım</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Proje 2 Demo Modal -->
-<div class="modal fade" id="demoModal2" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">To-Do List Uygulaması - Demo</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center">
-                <img src="~/images/proje2.gif" alt="To-Do List Demo" class="img-fluid rounded" />
-            </div>
-        </div>
-    </div>
-</div>
+}
 
 @section Scripts {
     <script>
