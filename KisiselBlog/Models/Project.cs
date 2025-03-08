@@ -1,4 +1,6 @@
 using System.Text.Json;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KisiselBlog.Models;
 
@@ -13,12 +15,12 @@ public class Project
     public string Category { get; set; } = string.Empty;
     public bool IsFeatured { get; set; }
     
-    // SQLite string listelerini doğrudan desteklemediği için JSON olarak saklayacağız
+    // JSON verileri için string alanlar
     public string? FeaturesJson { get; set; }
     public string? TechnologiesJson { get; set; }
     
-    // Model tarafında kullanılacak listeler (veritabanında saklanmayacak)
-    [System.ComponentModel.DataAnnotations.Schema.NotMapped]
+    // Model tarafında kullanılacak listeler
+    [NotMapped]
     public List<string> Features { 
         get => string.IsNullOrEmpty(FeaturesJson) 
             ? new List<string>() 
@@ -26,7 +28,7 @@ public class Project
         set => FeaturesJson = JsonSerializer.Serialize(value);
     }
     
-    [System.ComponentModel.DataAnnotations.Schema.NotMapped]
+    [NotMapped]
     public List<string> Technologies { 
         get => string.IsNullOrEmpty(TechnologiesJson) 
             ? new List<string>() 

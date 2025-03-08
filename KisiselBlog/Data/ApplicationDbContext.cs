@@ -1,6 +1,5 @@
 using KisiselBlog.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json;
 
 namespace KisiselBlog.Data;
 
@@ -9,6 +8,8 @@ public class ApplicationDbContext : DbContext
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
+        // Database.EnsureCreated() burada çağrılabilir,
+        // ancak migrasyon kullanıyorsanız bu çağrıyı kaldırın
     }
 
     public DbSet<Project> Projects { get; set; } = null!;
@@ -21,11 +22,5 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Project>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
-
-        // Örnek projeler kaldırıldı (HasData çağrıları silindi)
-        // Veritabanına verileri manuel olarak ekleyeceksiniz
-        
-        // Project Features ve Technologies için bir çözüm bulunması gerekiyor
-        // SQLite doğrudan List<string> desteklemediği için ek bir model yapısı oluşturalım
     }
 } 

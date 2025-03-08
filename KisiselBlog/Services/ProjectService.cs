@@ -22,15 +22,11 @@ public class ProjectService
         return await _projectRepository.AddProjectAsync(project);
     }
 
-    public async Task<List<Project>> GetAllProjectsAsync()
-    {
-        return await _projectRepository.GetAllProjectsAsync();
-    }
+    public async Task<List<Project>> GetAllProjectsAsync() => 
+        await _projectRepository.GetAllProjectsAsync();
 
-    public async Task<Project?> GetProjectByIdAsync(int id)
-    {
-        return await _projectRepository.GetProjectByIdAsync(id);
-    }
+    public async Task<Project?> GetProjectByIdAsync(int id) => 
+        await _projectRepository.GetProjectByIdAsync(id);
 
     public async Task<Project> UpdateProjectAsync(int id, Project updatedProject)
     {
@@ -86,8 +82,6 @@ public class ProjectService
         await _projectRepository.DeleteProjectAsync(id);
     }
 
-    public List<Project> GetFeaturedProjects()
-    {
-        return _projectRepository.GetFeaturedProjects();
-    }
+    public List<Project> GetFeaturedProjects() => 
+        _projectRepository.GetFeaturedProjects();
 } 
