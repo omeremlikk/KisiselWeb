@@ -48,17 +48,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q868x6eiig"},{"Name":"integrity","Value":"sha256-ZjWnXS2kCPjxjyZYrYMwm0zGnZTsRIQsfIf6xYTV0c0="},{"Name":"label","Value":"_content/KisiselBlog/images/proje1.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"167502"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022ZjWnXS2kCPjxjyZYrYMwm0zGnZTsRIQsfIf6xYTV0c0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 04 Mar 2025 12:59:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KisiselBlog/js/site.459v01eaw9.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"459v01eaw9"},{"Name":"integrity","Value":"sha256-\u002BLv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM="},{"Name":"label","Value":"_content/KisiselBlog/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8143"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022\u002BLv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 11:55:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KisiselBlog/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6647"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 10:28:34 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KisiselBlog/js/site.lrukawz8x4.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lrukawz8x4"},{"Name":"integrity","Value":"sha256-Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg="},{"Name":"label","Value":"_content/KisiselBlog/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6647"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 10:28:34 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BLv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8143"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022\u002BLv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 11:55:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KisiselBlog/KisiselBlog.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\KisiselBlog.iv3soyef7v.bundle.scp.css'))</AssetFile>

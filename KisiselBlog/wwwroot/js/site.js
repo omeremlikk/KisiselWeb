@@ -137,6 +137,40 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
+    // İletişim formu için mailto fonksiyonu
+    const sendMailtoButton = document.getElementById('sendMailtoButton');
+    
+    if (sendMailtoButton) {
+        sendMailtoButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Form değerlerini al
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            // Alanların dolu olup olmadığını kontrol et
+            if (!name || !email || !subject || !message) {
+                alert('Lütfen tüm alanları doldurun.');
+                return;
+            }
+            
+            // E-posta formatını kontrol et
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Lütfen geçerli bir e-posta adresi girin.');
+                return;
+            }
+            
+            // Mailto URL'sini oluştur
+            const mailtoUrl = `mailto:omeremlik.dev@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Gönderen: ${name} <${email}>\n\n${message}`)}`;
+            
+            // Tarayıcının e-posta istemcisini aç
+            window.location.href = mailtoUrl;
+        });
+    }
 });
 
 // Portfolio filtresi

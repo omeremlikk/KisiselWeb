@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pfvWBvNraASX7eKtMz/G/h4PZPBpo+OIluSaqP+68b0=",
+  "Hash": "KWBOVJVmtlRi0Y0CKRg4esEpyVmDQ0BAwAlJKuVgAKM=",
   "Source": "KisiselBlog",
   "BasePath": "_content/KisiselBlog",
   "Mode": "Default",
@@ -311,12 +311,12 @@
       "OriginalItemSpec": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\8y5wyavvq4-lrukawz8x4.gz",
+      "Identity": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\8y5wyavvq4-459v01eaw9.gz",
       "SourceId": "KisiselBlog",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/KisiselBlog",
-      "RelativePath": "js/site#[.{fingerprint=lrukawz8x4}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=459v01eaw9}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -325,8 +325,8 @@
       "RelatedAsset": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rlv8w7mgwn",
-      "Integrity": "/01QdUSCGWdCVWqllzyMPiGLqrlGJgozNN+3k+q0Ezs=",
+      "Fingerprint": "x0lenimt14",
+      "Integrity": "8QCxAjVs6Vp3hYLJuXCt2icg2g23LzRQ6O1T4AJvvd0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\js\\site.js"
@@ -1501,8 +1501,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lrukawz8x4",
-      "Integrity": "Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg=",
+      "Fingerprint": "459v01eaw9",
+      "Integrity": "+Lv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -3530,13 +3530,13 @@
       ]
     },
     {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\8y5wyavvq4-lrukawz8x4.gz",
+      "Route": "js/site.459v01eaw9.js",
+      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\8y5wyavvq4-459v01eaw9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000502008032"
+          "Quality": "0.000412711515"
         }
       ],
       "ResponseHeaders": [
@@ -3546,19 +3546,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1991"
+          "Value": "2422"
         },
         {
           "Name": "ETag",
-          "Value": "\"/01QdUSCGWdCVWqllzyMPiGLqrlGJgozNN+3k+q0Ezs=\""
+          "Value": "\"8QCxAjVs6Vp3hYLJuXCt2icg2g23LzRQ6O1T4AJvvd0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:28:34 GMT"
+          "Value": "Sat, 08 Mar 2025 11:55:38 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3574,18 +3574,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg=\""
+          "Value": "W/\"+Lv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "459v01eaw9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg="
+          "Value": "sha256-+Lv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM="
         }
       ]
     },
     {
-      "Route": "js/site.js",
+      "Route": "js/site.459v01eaw9.js",
       "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3595,7 +3603,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6647"
+          "Value": "8143"
         },
         {
           "Name": "Content-Type",
@@ -3603,121 +3611,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg=\""
+          "Value": "\"+Lv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:28:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\8y5wyavvq4-lrukawz8x4.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1991"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/01QdUSCGWdCVWqllzyMPiGLqrlGJgozNN+3k+q0Ezs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:28:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/01QdUSCGWdCVWqllzyMPiGLqrlGJgozNN+3k+q0Ezs="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.lrukawz8x4.js",
-      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\8y5wyavvq4-lrukawz8x4.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000502008032"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1991"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/01QdUSCGWdCVWqllzyMPiGLqrlGJgozNN+3k+q0Ezs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:28:34 GMT"
+          "Value": "Sat, 08 Mar 2025 11:55:38 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lrukawz8x4"
+          "Value": "459v01eaw9"
         },
         {
           "Name": "label",
@@ -3725,13 +3633,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg="
+          "Value": "sha256-+Lv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM="
         }
       ]
     },
     {
-      "Route": "js/site.lrukawz8x4.js",
-      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\js\\site.js",
+      "Route": "js/site.459v01eaw9.js.gz",
+      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\8y5wyavvq4-459v01eaw9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3740,7 +3648,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6647"
+          "Value": "2422"
         },
         {
           "Name": "Content-Type",
@@ -3748,56 +3656,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg=\""
+          "Value": "\"8QCxAjVs6Vp3hYLJuXCt2icg2g23LzRQ6O1T4AJvvd0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:28:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lrukawz8x4"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Py2Ka0d3SYrqJP2jYqeuNrFWWcEi981bhgmxwqTBXWg="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.lrukawz8x4.js.gz",
-      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\8y5wyavvq4-lrukawz8x4.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1991"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/01QdUSCGWdCVWqllzyMPiGLqrlGJgozNN+3k+q0Ezs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 10:28:34 GMT"
+          "Value": "Sat, 08 Mar 2025 11:55:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3815,7 +3678,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lrukawz8x4"
+          "Value": "459v01eaw9"
         },
         {
           "Name": "label",
@@ -3823,7 +3686,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/01QdUSCGWdCVWqllzyMPiGLqrlGJgozNN+3k+q0Ezs="
+          "Value": "sha256-8QCxAjVs6Vp3hYLJuXCt2icg2g23LzRQ6O1T4AJvvd0="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\8y5wyavvq4-459v01eaw9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000412711515"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2422"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8QCxAjVs6Vp3hYLJuXCt2icg2g23LzRQ6O1T4AJvvd0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 11:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+Lv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+Lv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+Lv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 11:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+Lv5tz9UEmSGu81ii7Fd2MHxJkB/RAIIKA/xfk0zfxM="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js.gz",
+      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\obj\\Debug\\net9.0\\compressed\\8y5wyavvq4-459v01eaw9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8QCxAjVs6Vp3hYLJuXCt2icg2g23LzRQ6O1T4AJvvd0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 11:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8QCxAjVs6Vp3hYLJuXCt2icg2g23LzRQ6O1T4AJvvd0="
         }
       ]
     },
