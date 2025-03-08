@@ -25,6 +25,14 @@
       "PackagePath": "staticwebassets\\images\\proje1.png"
     },
     {
+      "Id": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\images\\proje2.gif",
+      "PackagePath": "staticwebassets\\images\\proje2.gif"
+    },
+    {
+      "Id": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\images\\proje2.png",
+      "PackagePath": "staticwebassets\\images\\proje2.png"
+    },
+    {
       "Id": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
