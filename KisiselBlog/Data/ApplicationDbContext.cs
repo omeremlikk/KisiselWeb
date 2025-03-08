@@ -22,91 +22,9 @@ public class ApplicationDbContext : DbContext
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
 
-        // İlk proje verilerini ekleyelim (seed data)
-        modelBuilder.Entity<Project>().HasData(
-            new Project
-            {
-                Id = 1,
-                Title = "Kişisel Blog Projesi",
-                ShortDescription = "ASP.NET Core MVC ile geliştirilmiş modern blog sitesi",
-                Description = "ASP.NET Core MVC kullanılarak geliştirilen modern ve responsive bir kişisel blog sitesi.",
-                ImageUrl = "/images/proje1.png",
-                GifUrl = "/images/proje1.gif",
-                Category = "frontend",
-                IsFeatured = true,
-                FeaturesJson = JsonSerializer.Serialize(new List<string> 
-                { 
-                    "Responsive tasarım", 
-                    "Modern UI/UX", 
-                    "Blog yazı yönetimi",
-                    "SEO uyumlu yapı", 
-                    "Performans optimizasyonu" 
-                }),
-                TechnologiesJson = JsonSerializer.Serialize(new List<string> 
-                { 
-                    "ASP.NET Core MVC", 
-                    "Bootstrap 5", 
-                    "Entity Framework Core", 
-                    "SQLite", 
-                    "JavaScript/jQuery" 
-                })
-            },
-            new Project
-            {
-                Id = 2,
-                Title = "To-Do List Uygulaması",
-                ShortDescription = "React ve .NET Core Web API ile geliştirilmiş görev yönetim uygulaması",
-                Description = "React ve .NET Core Web API kullanılarak geliştirilen modern bir görev yönetim uygulaması.",
-                ImageUrl = "/images/proje2.png",
-                GifUrl = "/images/proje2.gif",
-                Category = "all",
-                IsFeatured = true,
-                FeaturesJson = JsonSerializer.Serialize(new List<string> 
-                { 
-                    "Responsive tasarım", 
-                    "Modern UI/UX", 
-                    "Görev yönetimi",
-                    "SEO uyumlu yapı", 
-                    "Performans optimizasyonu" 
-                }),
-                TechnologiesJson = JsonSerializer.Serialize(new List<string> 
-                { 
-                    "React.js", 
-                    ".NET Core Web API", 
-                    "Entity Framework Core", 
-                    "SQLite", 
-                    "JavaScript/jQuery" 
-                })
-            },
-            new Project
-            {
-                Id = 3,
-                Title = "E-Ticaret Platformu",
-                ShortDescription = "ASP.NET Core ve Angular ile geliştirilmiş e-ticaret platformu",
-                Description = "ASP.NET Core backend ve Angular frontend ile geliştirilmiş, tam kapsamlı bir e-ticaret platformu.",
-                ImageUrl = "/images/proje3.png",
-                GifUrl = "/images/proje3.gif",
-                Category = "web",
-                IsFeatured = false,
-                FeaturesJson = JsonSerializer.Serialize(new List<string> 
-                { 
-                    "Responsive tasarım", 
-                    "Modern UI/UX", 
-                    "E-ticaret işlevleri",
-                    "SEO uyumlu yapı", 
-                    "Performans optimizasyonu" 
-                }),
-                TechnologiesJson = JsonSerializer.Serialize(new List<string> 
-                { 
-                    "ASP.NET Core", 
-                    "Angular", 
-                    "MS SQL", 
-                    "Redis", 
-                    "JavaScript/jQuery" 
-                })
-            }
-        );
-
+        // Örnek projeler kaldırıldı (HasData çağrıları silindi)
+        // Veritabanına verileri manuel olarak ekleyeceksiniz
+        
         // Project Features ve Technologies için bir çözüm bulunması gerekiyor
         // SQLite doğrudan List<string> desteklemediği için ek bir model yapısı oluşturalım
     }

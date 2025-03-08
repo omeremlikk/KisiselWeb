@@ -66,4 +66,87 @@ public class ProjectRepository : IProjectRepository
             await _context.SaveChangesAsync();
         }
     }
+
+    // GetAllProjects metodunu uygulayalım (senkron versiyon)
+    public List<Project> GetAllProjects()
+    {
+        // Sadece veritabanında var olan sütunları sorgulayalım
+        var projects = _context.Projects
+            .Select(p => new Project {
+                Id = p.Id,
+                Title = p.Title,
+                Description = p.Description,
+                ShortDescription = p.ShortDescription,
+                ImageUrl = p.ImageUrl,
+                GifUrl = p.GifUrl,
+                Category = p.Category,
+                IsFeatured = p.IsFeatured,
+                FeaturesJson = p.FeaturesJson,
+                TechnologiesJson = p.TechnologiesJson
+            })
+            .ToList();
+        
+        // JSON dizelerini deserialize et
+        foreach (var project in projects)
+        {
+            try
+            {
+                if (!string.IsNullOrEmpty(project.FeaturesJson))
+                    project.Features = JsonSerializer.Deserialize<List<string>>(project.FeaturesJson);
+                    
+                if (!string.IsNullOrEmpty(project.TechnologiesJson))
+                    project.Technologies = JsonSerializer.Deserialize<List<string>>(project.TechnologiesJson);
+            }
+            catch
+            {
+                // Hatalı JSON varsa boş liste ata
+                project.Features = new List<string>();
+                project.Technologies = new List<string>();
+            }
+        }
+        
+        return projects;
+    }
+
+    // GetFeaturedProjects metodunu uygulayalım (senkron versiyon)
+    public List<Project> GetFeaturedProjects()
+    {
+        // Sadece veritabanında var olan sütunları sorgulayalım
+        var projects = _context.Projects
+            .Where(p => p.IsFeatured)
+            .Select(p => new Project {
+                Id = p.Id,
+                Title = p.Title,
+                Description = p.Description,
+                ShortDescription = p.ShortDescription,
+                ImageUrl = p.ImageUrl,
+                GifUrl = p.GifUrl, 
+                Category = p.Category,
+                IsFeatured = p.IsFeatured,
+                FeaturesJson = p.FeaturesJson,
+                TechnologiesJson = p.TechnologiesJson
+            })
+            .ToList();
+        
+        // JSON dizilerini deserialize et
+        foreach (var project in projects)
+        {
+            try
+            {
+                if (!string.IsNullOrEmpty(project.FeaturesJson))
+                    project.Features = JsonSerializer.Deserialize<List<string>>(project.FeaturesJson);
+                    
+                if (!string.IsNullOrEmpty(project.TechnologiesJson))
+                    project.Technologies = JsonSerializer.Deserialize<List<string>>(project.TechnologiesJson);
+            }
+            catch
+            {
+                // Hatalı JSON varsa boş liste ata
+                project.Features = new List<string>();
+                project.Technologies = new List<string>();
+            }
+        }
+        
+        return projects;
+    }
 } 

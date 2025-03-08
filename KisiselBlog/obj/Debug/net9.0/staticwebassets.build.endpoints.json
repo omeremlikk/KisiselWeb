@@ -979,6 +979,88 @@
       ]
     },
     {
+      "Route": "images/proje1.dyvnk136bz.gif",
+      "AssetFile": "images/proje1.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4380673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"exbKRNObHlWvqvgsiC1w8qxqd/kqb0lG7HrqHUb00ZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 13:01:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dyvnk136bz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-exbKRNObHlWvqvgsiC1w8qxqd/kqb0lG7HrqHUb00ZA="
+        },
+        {
+          "Name": "label",
+          "Value": "images/proje1.gif"
+        }
+      ]
+    },
+    {
+      "Route": "images/proje1.gif",
+      "AssetFile": "images/proje1.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4380673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"exbKRNObHlWvqvgsiC1w8qxqd/kqb0lG7HrqHUb00ZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 13:01:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-exbKRNObHlWvqvgsiC1w8qxqd/kqb0lG7HrqHUb00ZA="
+        }
+      ]
+    },
+    {
       "Route": "images/proje1.png",
       "AssetFile": "images/proje1.png",
       "Selectors": [],

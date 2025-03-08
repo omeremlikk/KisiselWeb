@@ -36,6 +36,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zOzetE5pbL2I5m7I1HuIpYem1j6vlqW1u6R7MRxEz9k="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"134826"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022zOzetE5pbL2I5m7I1HuIpYem1j6vlqW1u6R7MRxEz9k=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:32:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KisiselBlog/images/proje1.dyvnk136bz.gif">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\proje1.gif'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dyvnk136bz"},{"Name":"integrity","Value":"sha256-exbKRNObHlWvqvgsiC1w8qxqd/kqb0lG7HrqHUb00ZA="},{"Name":"label","Value":"_content/KisiselBlog/images/proje1.gif"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4380673"},{"Name":"Content-Type","Value":"image/gif"},{"Name":"ETag","Value":"\u0022exbKRNObHlWvqvgsiC1w8qxqd/kqb0lG7HrqHUb00ZA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 03 Mar 2025 13:01:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KisiselBlog/images/proje1.gif">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\proje1.gif'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-exbKRNObHlWvqvgsiC1w8qxqd/kqb0lG7HrqHUb00ZA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"4380673"},{"Name":"Content-Type","Value":"image/gif"},{"Name":"ETag","Value":"\u0022exbKRNObHlWvqvgsiC1w8qxqd/kqb0lG7HrqHUb00ZA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 03 Mar 2025 13:01:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KisiselBlog/images/proje1.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\proje1.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

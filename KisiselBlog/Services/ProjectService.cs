@@ -14,15 +14,11 @@ public class ProjectService
 
     public async Task<Project> CreateProjectAsync(Project project)
     {
-        // Yeni proje için temel ayarlar
         if (string.IsNullOrEmpty(project.Title))
         {
             throw new ArgumentException("Proje başlığı boş olamaz.");
         }
-
-        // CreatedDate alanı artık kullanılmıyor
-        // project.CreatedDate = DateTime.Now;
-
+        
         return await _projectRepository.AddProjectAsync(project);
     }
 
@@ -90,103 +86,8 @@ public class ProjectService
         await _projectRepository.DeleteProjectAsync(id);
     }
 
-    // Örnek proje verilerini döndüren metot
-    public List<Project> GetProjects()
-    {
-        // Test için örnek veriler
-        return new List<Project>
-        {
-            new Project
-            {
-                Id = 1,
-                Title = "Kişisel Blog Projesi",
-                ShortDescription = "ASP.NET Core MVC ile geliştirilmiş modern blog sitesi",
-                Description = "ASP.NET Core MVC kullanılarak geliştirilen modern ve responsive bir kişisel blog sitesi.",
-                ImageUrl = "/images/proje1.png",
-                GifUrl = "/images/proje1.gif",
-                Category = "frontend",
-                IsFeatured = true,
-                Features = new List<string> 
-                { 
-                    "Responsive tasarım", 
-                    "Modern UI/UX", 
-                    "Blog yazı yönetimi",
-                    "SEO uyumlu yapı", 
-                    "Performans optimizasyonu" 
-                },
-                Technologies = new List<string> 
-                { 
-                    "ASP.NET Core MVC", 
-                    "Bootstrap 5", 
-                    "Entity Framework Core", 
-                    "SQL Server", 
-                    "JavaScript/jQuery" 
-                }
-            },
-            new Project
-            {
-                Id = 2,
-                Title = "To-Do List Uygulaması",
-                ShortDescription = "React ve .NET Core Web API ile geliştirilmiş görev yönetim uygulaması",
-                Description = "React ve .NET Core Web API kullanılarak geliştirilen modern bir görev yönetim uygulaması.",
-                ImageUrl = "/images/proje2.png",
-                GifUrl = "/images/proje2.gif",
-                Category = "all",
-                IsFeatured = true,
-                Features = new List<string> 
-                { 
-                    "Görev ekleme, düzenleme, silme", 
-                    "Görev kategorileri", 
-                    "Görev önceliklendirme"
-                },
-                Technologies = new List<string> 
-                { 
-                    "React.js", 
-                    "Redux", 
-                    ".NET Core Web API", 
-                    "Entity Framework Core", 
-                    "SQL Server"
-                }
-            },
-            new Project
-            {
-                Id = 3,
-                Title = "E-Ticaret Platformu",
-                ShortDescription = "ASP.NET Core ve Angular ile geliştirilmiş e-ticaret platformu",
-                Description = "ASP.NET Core backend ve Angular frontend ile geliştirilmiş, tam kapsamlı bir e-ticaret platformu.",
-                ImageUrl = "/images/proje3.png",
-                GifUrl = "/images/proje3.gif",
-                Category = "web",
-                IsFeatured = false,
-                Features = new List<string> 
-                { 
-                    "Kullanıcı kayıt ve giriş sistemi", 
-                    "Ürün kataloğu ve arama", 
-                    "Sepet ve ödeme işlemleri",
-                    "Sipariş takibi", 
-                    "Admin paneli"
-                },
-                Technologies = new List<string> 
-                { 
-                    "ASP.NET Core", 
-                    "Angular 13", 
-                    "MS SQL Server", 
-                    "Redis Cache", 
-                    "Azure Deployment"
-                }
-            }
-        };
-    }
-
-    // Belirli bir projeyi ID'ye göre getiren metot
-    public Project GetProjectById(int id)
-    {
-        return GetProjects().FirstOrDefault(p => p.Id == id) ?? new Project();
-    }
-
-    // Ana sayfada gösterilecek öne çıkan projeleri getiren metot
     public List<Project> GetFeaturedProjects()
     {
-        return GetProjects().Where(p => p.IsFeatured).ToList();
+        return _projectRepository.GetFeaturedProjects();
     }
 } 
