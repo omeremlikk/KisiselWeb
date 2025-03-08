@@ -146,11 +146,14 @@ $(document).ready(function() {
         $(this).addClass('active');
 
         var filter = $(this).data('filter');
+        
         if (filter === 'all') {
-            $('#portfolio-items > div').fadeIn(300);
+            // Seçiciyi mevcut HTML yapısına uygun olarak güncelleme
+            $('.container > .row > div').fadeIn(300);
         } else {
-            $('#portfolio-items > div').hide();
-            $('#portfolio-items > div[data-category="' + filter + '"]').fadeIn(300);
+            // Seçiciyi mevcut HTML yapısına uygun olarak güncelleme
+            $('.container > .row > div').hide();
+            $('.container > .row > div[data-category="' + filter + '"]').fadeIn(300);
         }
     });
     
