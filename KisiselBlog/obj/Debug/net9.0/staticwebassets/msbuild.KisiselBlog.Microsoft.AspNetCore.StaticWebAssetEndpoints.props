@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/KisiselBlog/css/site.6hkd5sr5hv.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6hkd5sr5hv"},{"Name":"integrity","Value":"sha256-FlIBXMTEeYmEMUlx6AtZwTW/rs\u002BU40B3mD87ZdkTOc4="},{"Name":"label","Value":"_content/KisiselBlog/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29211"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FlIBXMTEeYmEMUlx6AtZwTW/rs\u002BU40B3mD87ZdkTOc4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 09:53:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KisiselBlog/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tNIHiaguIrRMRrTInlHdwElpFh684R5ci2Jm\u002BXfC2Lo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29181"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tNIHiaguIrRMRrTInlHdwElpFh684R5ci2Jm\u002BXfC2Lo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 14:17:38 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KisiselBlog/css/site.cuvi5fu3cs.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cuvi5fu3cs"},{"Name":"integrity","Value":"sha256-tNIHiaguIrRMRrTInlHdwElpFh684R5ci2Jm\u002BXfC2Lo="},{"Name":"label","Value":"_content/KisiselBlog/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29181"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tNIHiaguIrRMRrTInlHdwElpFh684R5ci2Jm\u002BXfC2Lo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 14:17:38 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FlIBXMTEeYmEMUlx6AtZwTW/rs\u002BU40B3mD87ZdkTOc4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29211"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FlIBXMTEeYmEMUlx6AtZwTW/rs\u002BU40B3mD87ZdkTOc4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 09:53:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KisiselBlog/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
