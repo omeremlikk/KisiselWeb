@@ -388,5 +388,5 @@ C:\Users\Ömer\Desktop\KisiselBlog\KisiselBlog\obj\Debug\net9.0\staticwebassets.
 C:\Users\Ömer\Desktop\KisiselBlog\KisiselBlog\obj\Debug\net9.0\KisiselB.94415DBC.Up2Date
 C:\Users\Ömer\Desktop\KisiselBlog\KisiselBlog\obj\Debug\net9.0\KisiselBlog.genruntimeconfig.cache
 C:\Users\Ömer\Desktop\KisiselBlog\KisiselBlog\obj\Debug\net9.0\ref\KisiselBlog.dll
-C:\Users\Ömer\Desktop\KisiselBlog\KisiselBlog\obj\Debug\net9.0\compressed\8y5wyavvq4-zpkoeu8ucl.gz
-C:\Users\Ömer\Desktop\KisiselBlog\KisiselBlog\obj\Debug\net9.0\compressed\ppvns136ka-ozbuk3qjam.gz
+C:\Users\Ömer\Desktop\KisiselBlog\KisiselBlog\obj\Debug\net9.0\compressed\ppvns136ka-322uteadxk.gz
+C:\Users\Ömer\Desktop\KisiselBlog\KisiselBlog\obj\Debug\net9.0\compressed\8y5wyavvq4-lrukawz8x4.gz
