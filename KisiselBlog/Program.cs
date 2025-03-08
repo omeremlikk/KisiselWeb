@@ -28,6 +28,14 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// Özel route tanımlama
+app.MapControllerRoute(
+    name: "portfolyo",
+    pattern: "portfolyo",
+    defaults: new { controller = "Home", action = "Portfolio" }
+);
+
+// Varsayılan route
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
