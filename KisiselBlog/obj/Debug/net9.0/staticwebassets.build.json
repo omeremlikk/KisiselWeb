@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zJvAD9nBjZPBbQmJaarFQSCHdtXU5v/nBdx5o/ytso4=",
+  "Hash": "5xrBUJLVwwfoBSReEptnMk+aixc9vWnVcTKsjweR5+A=",
   "Source": "KisiselBlog",
   "BasePath": "_content/KisiselBlog",
   "Mode": "Default",
@@ -1501,8 +1501,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "q868x6eiig",
-      "Integrity": "ZjWnXS2kCPjxjyZYrYMwm0zGnZTsRIQsfIf6xYTV0c0=",
+      "Fingerprint": "woce1buel7",
+      "Integrity": "QLsq6f+cnEugzNkVmVRTqcbauwJiJetVIPUPJkEhNHc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\proje1.png"
@@ -1548,6 +1548,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\proje2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\images\\proje3.gif",
+      "SourceId": "KisiselBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\",
+      "BasePath": "_content/KisiselBlog",
+      "RelativePath": "images/proje3#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tcluheb7tl",
+      "Integrity": "Yx+H5BBDkNTSLsJFWObtD7wIUXKzRJGWIU0s5bkSHNM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\proje3.gif"
+    },
+    {
+      "Identity": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\images\\proje3.png",
+      "SourceId": "KisiselBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\",
+      "BasePath": "_content/KisiselBlog",
+      "RelativePath": "images/proje3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pksojer0vf",
+      "Integrity": "V75gxbTZujuisr7IuHwmuoe5aDMHyHiGjRe3mygw0SQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\proje3.png"
     },
     {
       "Identity": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\js\\site.js",
@@ -3603,7 +3645,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "167502"
+          "Value": "202707"
         },
         {
           "Name": "Content-Type",
@@ -3611,11 +3653,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZjWnXS2kCPjxjyZYrYMwm0zGnZTsRIQsfIf6xYTV0c0=\""
+          "Value": "\"QLsq6f+cnEugzNkVmVRTqcbauwJiJetVIPUPJkEhNHc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 12:59:42 GMT"
+          "Value": "Tue, 11 Mar 2025 11:10:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3625,12 +3667,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZjWnXS2kCPjxjyZYrYMwm0zGnZTsRIQsfIf6xYTV0c0="
+          "Value": "sha256-QLsq6f+cnEugzNkVmVRTqcbauwJiJetVIPUPJkEhNHc="
         }
       ]
     },
     {
-      "Route": "images/proje1.q868x6eiig.png",
+      "Route": "images/proje1.woce1buel7.png",
       "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\images\\proje1.png",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3640,7 +3682,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "167502"
+          "Value": "202707"
         },
         {
           "Name": "Content-Type",
@@ -3648,11 +3690,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZjWnXS2kCPjxjyZYrYMwm0zGnZTsRIQsfIf6xYTV0c0=\""
+          "Value": "\"QLsq6f+cnEugzNkVmVRTqcbauwJiJetVIPUPJkEhNHc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 12:59:42 GMT"
+          "Value": "Tue, 11 Mar 2025 11:10:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3662,7 +3704,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q868x6eiig"
+          "Value": "woce1buel7"
         },
         {
           "Name": "label",
@@ -3670,7 +3712,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZjWnXS2kCPjxjyZYrYMwm0zGnZTsRIQsfIf6xYTV0c0="
+          "Value": "sha256-QLsq6f+cnEugzNkVmVRTqcbauwJiJetVIPUPJkEhNHc="
         }
       ]
     },
@@ -3835,6 +3877,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-Bz6oRc1m3xrEvhFlkd92r1V7HC/c2cTl0GkleoOaCsA="
+        }
+      ]
+    },
+    {
+      "Route": "images/proje3.gif",
+      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\images\\proje3.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13775321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yx+H5BBDkNTSLsJFWObtD7wIUXKzRJGWIU0s5bkSHNM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 10:59:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yx+H5BBDkNTSLsJFWObtD7wIUXKzRJGWIU0s5bkSHNM="
+        }
+      ]
+    },
+    {
+      "Route": "images/proje3.pksojer0vf.png",
+      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\images\\proje3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "109833"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V75gxbTZujuisr7IuHwmuoe5aDMHyHiGjRe3mygw0SQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 11:12:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pksojer0vf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/proje3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V75gxbTZujuisr7IuHwmuoe5aDMHyHiGjRe3mygw0SQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/proje3.png",
+      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\images\\proje3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "109833"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V75gxbTZujuisr7IuHwmuoe5aDMHyHiGjRe3mygw0SQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 11:12:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V75gxbTZujuisr7IuHwmuoe5aDMHyHiGjRe3mygw0SQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/proje3.tcluheb7tl.gif",
+      "AssetFile": "C:\\Users\\Ömer\\Desktop\\KisiselBlog\\KisiselBlog\\wwwroot\\images\\proje3.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13775321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yx+H5BBDkNTSLsJFWObtD7wIUXKzRJGWIU0s5bkSHNM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 10:59:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tcluheb7tl"
+        },
+        {
+          "Name": "label",
+          "Value": "images/proje3.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yx+H5BBDkNTSLsJFWObtD7wIUXKzRJGWIU0s5bkSHNM="
         }
       ]
     },
