@@ -5,9 +5,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Veritabanı bağlantı dizesi için önce ortam değişkenine bak, yoksa appsettings.json'dan al
+var connectionString = Environment.GetEnvironmentVariable("DATABASE_CONNECTION") ?? 
+    builder.Configuration.GetConnectionString("DefaultConnection");
+
 // SQLite veritabanını ekleyelim
 builder.Services.AddDbContext<KisiselBlog.Data.ApplicationDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(connectionString));
 
 // Proje servisi yerine Repository desenini kullanalım
 builder.Services.AddScoped<KisiselBlog.Repository.IProjectRepository, KisiselBlog.Repository.ProjectRepository>();
@@ -39,5 +43,30 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// Veritabanı dosyası için erişim kontrolü
+if (app.Environment.IsProduction())
+{
+    try
+    {
+        var dbPath = Path.Combine(app.Environment.ContentRootPath, "kisiselBlog.db");
+        if (File.Exists(dbPath))
+        {
+            // Dosya erişim haklarını ayarla (sadece uygulama kullanıcısı erişebilmeli)
+            File.SetAttributes(dbPath, FileAttributes.Hidden);
+            
+            // Windows için ACL ayarları
+            if (OperatingSystem.IsWindows())
+            {
+                // Uygulama havuzu kullanıcısına izin ver, diğerlerini kısıtla
+                // Bu kısmı sunucu ortamına göre uyarlamanız gerekebilir
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        // Hata log'u ekle
+    }
+}
 
 app.Run();

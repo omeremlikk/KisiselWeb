@@ -17,8 +17,25 @@ public class ProjectRepository : IProjectRepository
     public async Task<List<Project>> GetAllProjectsAsync() => 
         await _context.Projects.OrderByDescending(p => p.Id).ToListAsync();
 
-    public async Task<Project?> GetProjectByIdAsync(int id) => 
-        await _context.Projects.FindAsync(id);
+    public async Task<Project?> GetProjectByIdAsync(int id)
+    {
+        try
+        {
+            var project = await _context.Projects.FindAsync(id);
+            
+            if (project != null)
+            {
+                DeserializeJsonData(project);
+            }
+            
+            return project;
+        }
+        catch (Exception ex)
+        {
+            // Hata log'u ekle
+            throw new Exception($"Veritabanı işlemi sırasında hata: {ex.Message}", ex);
+        }
+    }
 
     public async Task<List<Project>> GetFeaturedProjectsAsync() => 
         await _context.Projects.Where(p => p.IsFeatured).ToListAsync();

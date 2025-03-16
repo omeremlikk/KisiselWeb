@@ -24,7 +24,7 @@ public class Project
     public List<string> Features { 
         get => string.IsNullOrEmpty(FeaturesJson) 
             ? new List<string>() 
-            : JsonSerializer.Deserialize<List<string>>(FeaturesJson) ?? new List<string>();
+            : DeserializeJsonSafely(FeaturesJson);
         set => FeaturesJson = JsonSerializer.Serialize(value);
     }
     
@@ -32,7 +32,19 @@ public class Project
     public List<string> Technologies { 
         get => string.IsNullOrEmpty(TechnologiesJson) 
             ? new List<string>() 
-            : JsonSerializer.Deserialize<List<string>>(TechnologiesJson) ?? new List<string>();
+            : DeserializeJsonSafely(TechnologiesJson);
         set => TechnologiesJson = JsonSerializer.Serialize(value);
+    }
+
+    private List<string> DeserializeJsonSafely(string json)
+    {
+        try 
+        {
+            return JsonSerializer.Deserialize<List<string>>(json) ?? new List<string>();
+        }
+        catch 
+        {
+            return new List<string>();
+        }
     }
 } 
