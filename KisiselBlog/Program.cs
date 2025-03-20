@@ -18,6 +18,9 @@ builder.Services.AddScoped<KisiselBlog.Repository.IProjectRepository, KisiselBlo
 
 var app = builder.Build();
 
+// Hata ayıklama sayfasını göster
+app.UseDeveloperExceptionPage();
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
