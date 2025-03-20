@@ -63,8 +63,7 @@ if (app.Environment.IsProduction())
 {
     try
     {
-        var dbPath = Path.Combine(app.Environment.ContentRootPath, "kisiselBlog.db");
-        if (File.Exists(dbPath))
+        if (File.Exists(dbPath))  // Burada var olan dbPath değişkenini kullan
         {
             // Dosya erişim haklarını ayarla (sadece uygulama kullanıcısı erişebilmeli)
             File.SetAttributes(dbPath, FileAttributes.Hidden);
@@ -79,7 +78,8 @@ if (app.Environment.IsProduction())
     }
     catch (Exception ex)
     {
-        // Hata log'u ekle
+        // Hata logunu yazdır
+        Console.WriteLine($"Veritabanı dosyası ayarlanırken hata oluştu: {ex.Message}");
     }
 }
 
