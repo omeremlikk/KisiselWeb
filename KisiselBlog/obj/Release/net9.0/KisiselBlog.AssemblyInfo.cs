@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KisiselBlog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad448bbd1cf72b078e81b94ed34b629b9c7fe2c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+919108d801fad6cf0b491a56443f4947f2154291")]
 [assembly: System.Reflection.AssemblyProductAttribute("KisiselBlog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KisiselBlog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
