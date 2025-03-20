@@ -5,8 +5,20 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Veritabanı yolunu App_Data klasörüne ayarla
-var dbPath = Path.Combine(builder.Environment.ContentRootPath, "App_Data", "kisiselBlog.db");
+// Veritabanı yolunu ayarla (geliştirme veya üretim ortamına göre)
+string dbPath;
+if (builder.Environment.IsDevelopment())
+{
+    // Geliştirme ortamı için (yerel makine)
+    dbPath = Path.Combine(Directory.GetCurrentDirectory(), "kisiselBlog.db");
+}
+else
+{
+    // Üretim ortamı için (sunucu)
+    dbPath = Path.Combine(builder.Environment.ContentRootPath, "App_Data", "kisiselBlog.db");
+}
+
+// Bağlantı dizesini oluştur
 var connectionString = $"Data Source={dbPath};Mode=ReadWrite;";
 
 // SQLite veritabanını ekleyelim
@@ -18,36 +30,44 @@ builder.Services.AddScoped<KisiselBlog.Repository.IProjectRepository, KisiselBlo
 
 var app = builder.Build();
 
-// Veritabanı dizinini oluştur
-Directory.CreateDirectory(Path.Combine(app.Environment.ContentRootPath, "App_Data"));
-
-// Veritabanını otomatik oluştur
-using (var scope = app.Services.CreateScope())
+// Geliştirme ortamı için veritabanı dizini oluştur
+if (app.Environment.IsDevelopment())
 {
-    var services = scope.ServiceProvider;
-    try 
+    try
     {
-        var context = services.GetRequiredService<KisiselBlog.Data.ApplicationDbContext>();
-        
-        // Veritabanı yolunu ve varlığını kontrol et
-        Console.WriteLine($"Veritabanı yolu: {dbPath}");
-        Console.WriteLine($"Veritabanı dosyası mevcut: {File.Exists(dbPath)}");
-        
-        // Veritabanı bağlantısını test et
-        context.Database.EnsureCreated();
-        
-        // Projeleri kontrol et
-        var projects = context.Projects.ToList();
-        Console.WriteLine($"Veritabanındaki toplam proje sayısı: {projects.Count}");
-        foreach (var project in projects)
+        // Veritabanı dosyasının dizini mevcut değilse oluştur
+        var dbDirectory = Path.GetDirectoryName(dbPath);
+        if (!Directory.Exists(dbDirectory) && dbDirectory != null)
         {
-            Console.WriteLine($"Proje ID: {project.Id}, Başlık: {project.Title}, IsFeatured: {project.IsFeatured}");
+            Directory.CreateDirectory(dbDirectory);
+        }
+        
+        // Veritabanı bağlantısını test et ve tabloları oluştur
+        using (var scope = app.Services.CreateScope())
+        {
+            var services = scope.ServiceProvider;
+            var context = services.GetRequiredService<KisiselBlog.Data.ApplicationDbContext>();
+            context.Database.EnsureCreated();
+            Console.WriteLine($"Veritabanı dosyası: {dbPath}");
+            Console.WriteLine($"Veritabanı dosyası mevcut mu: {File.Exists(dbPath)}");
         }
     }
     catch (Exception ex)
     {
         Console.WriteLine($"Veritabanı hatası: {ex.Message}");
-        Console.WriteLine($"Stack trace: {ex.StackTrace}");
+    }
+}
+else
+{
+    // Üretim ortamı için App_Data klasörünü oluştur
+    Directory.CreateDirectory(Path.Combine(app.Environment.ContentRootPath, "App_Data"));
+    
+    // Veritabanını otomatik oluştur
+    using (var scope = app.Services.CreateScope())
+    {
+        var services = scope.ServiceProvider;
+        var context = services.GetRequiredService<KisiselBlog.Data.ApplicationDbContext>();
+        context.Database.EnsureCreated();
     }
 }
 
