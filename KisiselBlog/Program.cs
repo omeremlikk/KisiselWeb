@@ -18,6 +18,14 @@ builder.Services.AddScoped<KisiselBlog.Repository.IProjectRepository, KisiselBlo
 
 var app = builder.Build();
 
+// Veritabanını otomatik oluştur
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<KisiselBlog.Data.ApplicationDbContext>();
+    context.Database.EnsureCreated();
+}
+
 // Hata ayıklama sayfasını göster
 app.UseDeveloperExceptionPage();
 
