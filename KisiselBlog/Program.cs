@@ -5,9 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Veritabanı bağlantı dizesi için önce ortam değişkenine bak, yoksa appsettings.json'dan al
-var connectionString = Environment.GetEnvironmentVariable("DATABASE_CONNECTION") ?? 
-    builder.Configuration.GetConnectionString("DefaultConnection");
+// Veritabanı yolunu App_Data klasörüne ayarla
+var dbPath = Path.Combine(builder.Environment.ContentRootPath, "App_Data", "kisiselBlog.db");
+var connectionString = $"Data Source={dbPath}";
 
 // SQLite veritabanını ekleyelim
 builder.Services.AddDbContext<KisiselBlog.Data.ApplicationDbContext>(options =>
@@ -17,6 +17,9 @@ builder.Services.AddDbContext<KisiselBlog.Data.ApplicationDbContext>(options =>
 builder.Services.AddScoped<KisiselBlog.Repository.IProjectRepository, KisiselBlog.Repository.ProjectRepository>();
 
 var app = builder.Build();
+
+// Veritabanı dizinini oluştur
+Directory.CreateDirectory(Path.Combine(app.Environment.ContentRootPath, "App_Data"));
 
 // Veritabanını otomatik oluştur
 using (var scope = app.Services.CreateScope())
